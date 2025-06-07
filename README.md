@@ -29,3 +29,8 @@ rasa run --enable-api --cors "*" --port 5001
 ### 5. Run the action server
 
 rasa run actions
+
+## Result
+
+![Screenshot 2025-06-07 125958](https://github.com/user-attachments/assets/5d951620-02fa-46be-87b3-3cc59f980eff)
+
