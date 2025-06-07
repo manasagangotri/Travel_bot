@@ -34,3 +34,8 @@ rasa run actions
 
 ![Screenshot 2025-06-07 125958](https://github.com/user-attachments/assets/5d951620-02fa-46be-87b3-3cc59f980eff)
 
+
+
+![Screenshot 2025-06-07 124431](https://github.com/user-attachments/assets/75b7a116-4bda-4449-b6e7-2fa6e6ac64fa)
+
+
