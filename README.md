@@ -26,6 +26,6 @@ rasa train
 rasa run --enable-api --cors "*" --port 5001
 
 
-5. Run the action server
+### 5. Run the action server
 
 rasa run actions
