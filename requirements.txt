@@ -1,0 +1,7 @@
+rasa==3.7.0b2
+rasa-sdk==3.7.1
+SQLAlchemy==2.0.30
+requests==2.31.0
+pymysql==1.1.0           # If you're using MySQL
+# psycopg2-binary==2.9.9 # Uncomment if you're using PostgreSQL
+python-dotenv==1.0.1     # For loading .env secrets (optional)
