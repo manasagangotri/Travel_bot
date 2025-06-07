@@ -17,6 +17,12 @@ source venv/bin/activate  # or venv\Scripts\activate on Windows
 
 pip install -r requirements.txt
 
+### Rasa initialisation
+
+rasa init
+
+### AFTER THAT COPY PASTE ALL THE FILES in the repo such as domain.yml,data(nlu,stories,rules),endpoint....
+
 ### 3. Train the model
 
 rasa train
