@@ -65,4 +65,6 @@ pip install gradio
 python app.py
 
 
+# DEMO :  https://huggingface.co/spaces/manasagangotri/travel_bot
+
 
