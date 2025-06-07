@@ -1,0 +1,46 @@
+version: "3.1"
+
+rules:
+
+- rule: Greet and ask to fill travel form
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_ask_travel_form
+
+- rule: Trigger travel form when user agrees
+  steps:
+  - intent: affirm_fill_form
+  - action: travel_form
+  - active_loop: travel_form
+
+- rule: Submit travel form after filling
+  condition:
+  - active_loop: travel_form
+  steps:
+  - action: travel_form
+  - active_loop: null
+  - action: action_confirm_trip
+  - action: utter_ask_weather
+
+- rule: User wants to know weather after trip details
+  steps:
+  - action: utter_ask_weather
+  - intent: affirm_weather
+  - action: action_fetch_weather
+  - action: utter_what_to_pack
+
+- rule: Fallback rule
+  steps:
+  - intent: fallback
+  - action: utter_default
+
+- rule: Handle low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_default
+
+- rule: Handle FAQ
+  steps:
+    - intent: faq
+    - action: action_faq

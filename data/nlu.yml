@@ -1,0 +1,77 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+    - good morning
+    - good evening
+    - hey there
+
+- intent: affirm_fill_form
+  examples: |
+    - yes, I want to fill the form
+    - sure, let's do the travel form
+    - okay, let's proceed
+    - yes
+    - yeah
+    - yup
+    - sure
+    - of course
+    - definitely
+    - absolutely
+
+- intent: affirm_weather
+  examples: |
+    - yes, tell me the weather
+    - sure, give me weather info
+    - yes check weather
+    - yes, check the weather
+    - check weather
+    - show me the weather
+    - get weather details
+- intent: deny
+  examples: |
+    - no
+    - nope
+    - nah
+    - not really
+    - no thanks
+
+- intent: ask_weather
+  examples: |
+    - what’s the weather in [Paris](destination)?
+    - can you tell me the weather in [Delhi](destination)?
+    - is it raining in [Chennai](destination)?
+    - how is the weather at [Bangalore](destination)?
+    - do I need an umbrella in [Mumbai](destination)?
+
+- intent: recommend_packing
+  examples: |
+    - what should I pack for [Goa](destination)?
+    - any packing tips for [Hyderabad](destination)?
+    - what to carry for [Manali](destination)?
+    - how to pack for [Jaipur](destination)?
+    - things to take to [Leh](destination)
+
+
+
+- intent: faq
+  examples: |
+    - who are you?
+    - what is rasa?
+    - how can I plan my trip?
+    - who built you?
+    - what can you do?
+    - what is your name?
+
+
+- intent: fallback
+  examples: |
+    - asdjkl
+    - blah blah
+    - something random
+    - iudfhg
+    - not making sense
